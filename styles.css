@@ -1,0 +1,123 @@
+/* ------------------  RESET  --------------*/
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  border: none;
+}
+
+/* ------------------  VARIABLES  --------------*/
+:root {
+  --WhiteText: #fff;
+  --Background: #c8e8f1;
+  --Black-Text: rgb(68, 66, 66);
+  --Test: (180deg, #21c8f6, #637bff);
+}
+
+.background1-left-column {
+  background: linear-gradient(180deg, #21c8f6, #637bff);
+}
+
+.background2-left-column {
+  background: linear-gradient(180deg, #6edcc4, #1aab8b);
+}
+
+/* ------------------  BODY  --------------*/
+body {
+  background-color: var(--Background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* ------------------  CARD  --------------*/
+.card {
+  background-color: var(--WhiteText);
+  border-radius: 1rem;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+  display: flex;
+  margin: 1.5rem;
+  overflow: hidden;
+  width: 30rem;
+  height: 19rem;
+}
+
+.card h6 {
+  opacity: 0.6;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.card h2 {
+  letter-spacing: 0.1rem;
+  margin: 1rem 0;
+  color: var(--Black-Text);
+}
+
+/* ------------------  LEFT COLUMN  --------------*/
+.left-column {
+  color: var(--WhiteText);
+  padding: 2rem;
+  max-width: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-column h2 {
+  color: var(--WhiteText);
+}
+
+.left-column i {
+  font-size: 5rem;
+}
+
+/* ------------------  RIGHT COLUMN  --------------*/
+.right-column {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.right-column p {
+  font-size: 0.9rem;
+  color: var(--Black-Text);
+}
+
+.button {
+  border-radius: 3rem;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+  color: var(--WhiteText);
+  font-size: 1.2rem;
+  padding: 0.8rem 1.3rem;
+  letter-spacing: 0.1rem;
+  align-self: flex-end;
+}
+
+/* ------------------  MEDIA QUERIES  --------------*/
+/* ------------------  <(1030px)  --------------*/
+@media (max-width: 1030px) {
+  .container {
+    flex-direction: column;
+    justify-content: centera;
+    align-items: center;
+    height: auto;
+  }
+}
